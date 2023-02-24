@@ -1,0 +1,66 @@
+@font-face{
+  font-family: Play Pretend;
+  src: url("./Play\ Pretend.otf");
+}
+
+body, *{
+  padding: 0;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+  font-family: Play Pretend;
+}
+body{
+  height: 50vh;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: radial-gradient(50% 158.02% at 50% 50%, #1C1E21 0%, #393D41 100%);
+  
+}
+span{
+  border: solid transparent;
+  position: relative;
+  transition: height 0.3s;
+  height: 53px;
+  font-size: 40px;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.l{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.a{
+  z-index: 2;
+  color: #F4F4F6;
+}
+.b{
+  z-index: 1;
+  color: #FF006E;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+.c{
+  z-index: 0;
+  color: #1F75FF;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+span:hover{
+  height: 71px;
+}
+span:hover .b{
+  margin-top: 9px;
+  opacity: 1;
+}
+span:hover .c{
+  opacity: 1;
+}
+label{
+  cursor: pointer;
+}
